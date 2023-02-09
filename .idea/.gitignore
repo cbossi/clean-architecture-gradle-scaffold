@@ -11,4 +11,6 @@ misc.xml
 vcs.xml
 jarRepositories.xml
 modules.xml
+markdown.xml
 *.iml
+libraries
