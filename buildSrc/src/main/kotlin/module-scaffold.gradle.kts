@@ -31,3 +31,13 @@ val domainConfiguration = configurations.create("domain")
 dependencies {
     domainConfiguration(domainSourceSet.output)
 }
+
+testing.suites {
+    getByName<JvmTestSuite>("test") {
+        useJUnitJupiter()
+
+        dependencies {
+            implementation("org.junit.jupiter:junit-jupiter-api:5.10.1")
+        }
+    }
+}
