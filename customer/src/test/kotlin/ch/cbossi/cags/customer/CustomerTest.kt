@@ -7,7 +7,7 @@ class CustomerTest {
         val repository: CustomerRepository = CustomerRepositoryImpl()
         val service = CustomerService(repository)
 
-        service.printCustomers()
+        service.loadCustomers()
         println(customer)
     }
 
