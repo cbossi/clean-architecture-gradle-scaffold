@@ -19,7 +19,7 @@ val infrastructureCompilation = kotlin.target.compilations.create("infrastructur
     associateWith(applicationCompilation)
 }
 
-kotlin.target.compilations.getByName("test").apply {
+kotlin.target.compilations.getByName("test") {
     associateWith(domainCompilation)
     associateWith(applicationCompilation)
     associateWith(infrastructureCompilation)
